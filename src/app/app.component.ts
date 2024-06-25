@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PanelService } from './panel.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-training';
+  public color = 'black'
+  public colors = ['black', 'red', 'blue'];
+  public somename = 'yellow'
+
+  public panelClicked(): void {
+    this.color = this.color === 'black' ? 'red' : 'black'
+  }
 }
