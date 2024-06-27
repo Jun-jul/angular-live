@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PanelComponent } from './panel/panel.component';
 import { PanelService } from './panel.service';
+import { FirstPageComponent } from './first-page/first-page.component';
+import { SecondPageComponent } from './second-page/second-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PanelComponent
+    PanelComponent,
+    FirstPageComponent,
+    SecondPageComponent
   ],
   imports: [
     BrowserModule,

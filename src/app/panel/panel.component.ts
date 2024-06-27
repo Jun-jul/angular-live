@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { PanelService } from "../panel.service";
 
 @Component({
     selector: 'panel',

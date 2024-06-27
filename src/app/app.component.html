@@ -10,4 +10,13 @@
     <panel *ngSwitchDefault [color]="'red'" (panelClicked)="panelClicked()"></panel>
 </div>
 
-{{ 'test' | translate: }}
+<br>
+
+{{ 'test' | lowercase }}
+
+<br>
+
+<button routerLink="/first">First</button>
+<button routerLink="/second">Second</button>
+
+<router-outlet></router-outlet>

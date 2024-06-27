@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PanelService } from './panel.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,12 @@ export class AppComponent {
   public colors = ['black', 'red', 'blue'];
   public somename = 'yellow'
 
+  public constructor (private readonly panelService: PanelService, private readonly router: Router){}
+
   public panelClicked(): void {
     this.color = this.color === 'black' ? 'red' : 'black'
+    this.panelService.log();
+    // this.router.navigateByUrl('first')
+    // this.router.navigate(['first'])
   }
 }
